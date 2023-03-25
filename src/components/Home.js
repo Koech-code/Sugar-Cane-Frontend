@@ -2,7 +2,17 @@ import React from 'react'
 import backgroundImage from '../images/home.png'
 import footerBackgroundImage from '../images/Footer-bg.png'
 import apple from '../images/apple.jpg'
+import Calendry from './Calendar'
+import BarGraph from './Graph'
+
 const Home = () => {
+  const styles = {
+    backgroundImage: `url('http://www.agrilearner.com/kharif-crops/sugarcane-cultivation/attachment/suagarcane-field-600x330/')`,
+    height: '100vh',
+    width: '100vw',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+  };
   return (
 //     <div
 //     className="h-screen object-cover"
@@ -12,55 +22,23 @@ const Home = () => {
 //   </div>
   
   <div>
-      <div className="relative h-screen">
-      <img
-        className="absolute top-0 left-0 w-full h-full object-cover"
-        src={backgroundImage}
-        alt="background"
-      />
+      <div className="relative h-screen" style={styles}>
+      
       <div className="absolute top-0 left-0 w-full h-full bg-gray-900 opacity-0"></div>
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-        <h1 className="text-5xl font-bold text-white mb-8">PERFORMANCE AT ELITE LEVEL</h1>
-        <button className="px-8 py-4 bg-[#5F9EA0]  text-white font-bold rounded hover:bg-green-500 hover:text-white">GET STARTED</button>
+        <h1 className="text-5xl font-bold text-white mb-8">WE VALUE OUR FARMERS</h1>
+        <p className='text-white mb-8'>You can book a date to deliver your sugarcanes to our factory.</p>
+        <button className="px-8 py-4 bg-[#5F9EA0]  text-white font-bold rounded hover:bg-green-500 hover:text-white">Book Delivery!</button>
       </div>
       </div>
       <div className="bg-white rounded-lg shadow-md p-4 m-8">
-      <h2 className="text-lg font-bold mb-2 text-center text-blue-600">SPORTS SCHOLARSHIPS</h2>
-      <p className="text-gray-600 p-8">Take your athletic and academic career to the next level 
-      We help athletes on their journey in getting a sports scholarships to study in the USA 
-      and advance their sports careers.</p>
+        <Calendry/>
       </div>
 
     <div className="flex justify-center">
-        <div className="bg-white rounded-lg shadow-md p-4 m-8">
-        <h2 className="text-lg font-bold mb-2 text-center text-blue-600">1. Assessment</h2>
-        <p className="text-gray-600 p-8">Our team consist of athletes and former athletes who evaluate
-        your submitted registration requirements and if successful move you to the next step.</p>
-        </div>
-        <div className="bg-white rounded-lg shadow-md p-4 m-8">
-        <h2 className="text-lg font-bold mb-2 text-center text-blue-600">2. Preparation</h2>
-        <p className="text-gray-600 p-8">We then pair and prepare you for your prospective 
-        college by helping you gather requirements and other relevant material for a successful admission.
-        </p>
-        </div>
-        <div className="bg-white rounded-lg shadow-md p-4 m-8">
-        <h2 className="text-lg font-bold mb-2 text-center text-blue-600">3. Acceptance</h2>
-        <p className="text-gray-600 p-8">Success! You begin a new and fulfilling journey in your academic
-        and athletic career in a top US college.</p>
-        </div>
+      <BarGraph/>
     </div>
-    <div className="relative h-screen">
-      <img
-        className="absolute top-0 left-0 w-full h-full"
-        src={footerBackgroundImage}
-        alt="background"
-      />
-      <div className="absolute top-0 left-0 w-full h-full bg-gray-900 opacity-0"></div>
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-        <h1 className="text-5xl font-bold text-white mb-8">TRY THE FREE ASSESSMENT</h1>
-        <button className="px-8 py-4 bg-[#5F9EA0]  text-white font-bold rounded hover:bg-green-500 hover:text-white">NOW!</button>
-      </div>
-      </div>
+
 
       <div className='bg-[#5F9EA0] flex justify-evenly'>
         <div className="rounded-lg p-4 m-8">

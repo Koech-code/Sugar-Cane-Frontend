@@ -15,6 +15,7 @@ import Journals from './components/Journals';
 import ProfileAcademics from './components/ProfileAcademics';
 import ProfileAchievements from './components/ProfileAchievements';
 import Home from './components/Home';
+import Calendry from './components/Calendar';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path='/direct-message' element={<DirectMessage/>}/>
         <Route path='/events' element={<EventPosts/>}/>
         <Route  path='/profiles' element={<Profiles/>} />
+        <Route  path='/calendry' element={<Calendry/>} />
         <Route path='/prof' element={<MyProfile/>}>
           <Route path='feeds' element={<ProfileFeeds/>}/>
           <Route path='journals' element={<Journals/>}/>

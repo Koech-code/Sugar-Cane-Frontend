@@ -31,7 +31,12 @@ const Navbar = () => {
                 >
                   Home
                 </a>
-
+                <a
+                  href="/calendry"
+                  className="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700"
+                >
+                  Calendar
+                </a>
                 <a
                   href="/events"
                   className="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700"
@@ -134,6 +139,12 @@ const Navbar = () => {
             >
               Events
             </a>
+            <a
+                  href="/calendry"
+                  className="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700"
+                >
+                  Calendar
+                </a>
             <a
               href="/direct-message"
               className="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700"
